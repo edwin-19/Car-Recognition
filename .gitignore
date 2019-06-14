@@ -1,3 +1,4 @@
-src/models/
+src/models/vgg16/*.h5
+src/models/vgg16/*.json
 data/
 src/dataset/
