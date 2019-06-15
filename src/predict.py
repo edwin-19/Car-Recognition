@@ -5,7 +5,6 @@ import numpy as np
 import cv2 
 import pandas as pd 
 import config 
-import random
 
 def load_model(model_path, model_weights):
     with open(model_path, 'r') as f:
@@ -28,6 +27,7 @@ if __name__ == "__main__":
     img = img / 255.
     img = np.expand_dims(img, axis=0)
     
+
     prediction = model.predict(img)
     
     class_pred = np.argmax(prediction)

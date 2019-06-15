@@ -7,6 +7,7 @@ from matplotlib import pyplot as plt
 from sklearn.metrics import confusion_matrix, classification_report
 import seaborn as sn
 import pandas as pd
+import config
 
 img_width, img_height = 224, 224
 batch_size = 32
@@ -18,12 +19,17 @@ test_image_dataset = 'dataset/cars_test/'
 df = pd.read_csv('dataset/car_train.csv')
 class_df = pd.read_csv('dataset/classess.csv')
 
+'''
+The evaluation code was mainly borrowed from the following kaggle challenge:
+https://www.kaggle.com/jutrera/training-a-densenet-for-the-stanford-car-dataset
+I DO TAKE CREDIT FOR THE FOLLOWING CODE
+'''
 if __name__ == "__main__":
     # Load Model
-    with open('models/vgg16/vgg16_finalModel.json', 'r') as f:
+    with open(config.model_path, 'r') as f:
         model = model_from_json(f.read())
 
-    model.load_weights('models/vgg16/vgg16_finalModel.h5')
+    model.load_weights(config.model_weights)
 
     sgd = SGD(lr=0.0001, decay=1e-4, momentum=0.9, nesterov=True)
     # sgd = Adam(lr=0.0001, decay=1e-4)

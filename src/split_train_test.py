@@ -1,7 +1,6 @@
 import numpy as np 
 import pandas as pd
 import cv2
-from PIL import Image
 import os
 import matplotlib.pyplot as plt
 import glob
