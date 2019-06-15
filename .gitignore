@@ -1,4 +1,5 @@
-src/models/vgg16/*.h5
-src/models/vgg16/*.json
+src/models/*/*.h5
+src/models/*/*.json
 data/
 src/dataset/
+src/__pycache__
