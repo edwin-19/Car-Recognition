@@ -16,14 +16,25 @@ The following repo is an image classfier for cars built for the grab AI for SEA 
 git clone https://github.com/edwin-19/Car-Recognition.git
 pip install -r requirements.txt
 ```
+
 ## Evaluation
 <b>NOTE: Change the config file for model path</b>  
 To run the script make sure to download the architecture and weights from the following [Google Drive](https://drive.google.com/drive/folders/10PjimksZGUnPSdXDO6eIE5ui2qcwwV1e?usp=sharing) and add it to models folder e.g: 
 - models/vgg16
 - models/resnet
+### Single Predict - from single image
 ```sh
-python predict.py
+python predict.py --image dataset/cars_test/00001.jpg --show_image
 ```
+
+### Batch Predict - from folder
+```sh
+python batch_predict.py --image_folder dataset/test/
+```
+
+<b>NOTES: Results are classfied_name followd by - then the perecentage:  
+Suzuki Aerio Sedan 2007 - 58.42927694320679.jpg
+</b>
 
 ### Python API
 Using FLASK to serve as a flask rest api:
@@ -77,7 +88,7 @@ For this repo i have used tranfer learning from pretrained weights using the fol
 ### Evaluation Script
 Run evaluation script to print report and confusion matrix
 ```sh
-python split_train_test.py
+python evaluate.py
 ```
 
 - Model architecture used is vgg16 
