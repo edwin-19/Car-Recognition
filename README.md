@@ -53,10 +53,11 @@ Download the following three:
 - Testing Image 
 - Car Devkit  
 
-![file_structure](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/FileStrucutre.png?raw=true)  
+![file_structure](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/PartialFileStructure.png?raw=true)  
 
 then unzip all tar files and add to the following directory inside src:
 
+![file_structure](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/FullFileStructure.png?raw=true)  
 
 Or you can just run the following script to download and unzip:
 ```sh
