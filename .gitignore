@@ -1,5 +1,6 @@
 src/models/*/*.h5
 src/models/*/*.json
+raw_data/
 data/
 src/dataset/
 src/__pycache__

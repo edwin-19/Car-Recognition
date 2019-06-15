@@ -42,13 +42,13 @@ if __name__ == "__main__":
     test_kit = 'https://ai.stanford.edu/~jkrause/cars/car_devkit.tgz'
 
     # download all three files and unzip them
-    download_file(test_kit, '../data/')
-    download_file(training_images, '../data/')
-    download_file(test_images, '../data/')
+    download_file(test_kit, '../raw_data/')
+    download_file(training_images, '../raw_data/')
+    download_file(test_images, '../raw_data/')
 
     if not os.path.exists('dataset/'):
         os.makedirs('dataset/')
     
-    for fname in glob.glob('../data/*.tgz'):
+    for fname in glob.glob('../raw_data/*.tgz'):
         extract(fname, extract_path='dataset/')
         

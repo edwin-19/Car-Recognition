@@ -42,15 +42,18 @@ Using FLASK to serve as a flask rest api:
 python app.py
 ```
 Use POSTMAN or any other client to parse the following link() and set it to post as such:
+![POSTMAN](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/Postman.png?raw=true, "POSTMAN")
 
 ## Training
 ### Download Dataset
-The dataset used to train the classfier is the [Standford Car Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)  
+The dataset used to train the classfier is the [Standford Car Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html) and put inside the raw_data folder as such: 
+
 Download the following three:
 - Training Image
 - Testing Image 
 - Car Devkit  
-and put inside the data folder as such:
+
+![file_structure](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/FileStrucutre.png?raw=true)  
 
 then unzip all tar files and add to the following directory inside src:
 
