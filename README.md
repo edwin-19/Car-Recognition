@@ -41,7 +41,7 @@ Using FLASK to serve as a flask rest api:
 ```sh
 python app.py
 ```
-Use POSTMAN or any other client to parse the following link() and set it to post as such:
+Use POSTMAN or any other client to parse the following link(http://localhost:8080/recognize_car) and set it to post as such:
 ![POSTMAN](https://github.com/edwin-19/Car-Recognition/blob/master/src/images/Postman.png?raw=true, "POSTMAN")
 
 ## Training
